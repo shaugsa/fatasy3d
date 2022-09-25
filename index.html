@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="./style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600;700;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;1,500&display=swap" rel="stylesheet">
-    <title>Fantasy3D</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600;700;900&family=Open+Sans:wght@400;500;600;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+        <title>Fantasy3D</title>
 </head>
 <body>
     
@@ -360,7 +360,11 @@
                     <ul class="photo-list">
 
                         <li class="photo__item">
-                            <img class="photo__report" src="./images/photo1.jpg" alt="photo-report">
+                            <input type="checkbox" id="zoomCheck">
+                            <label for="zoomCheck" class="image-container">
+                                <img class="photo__report" id="img1" src="./images/photo1.jpg" alt="photo-report">
+                            </label>
+                            <a class="close-photo" href="#" alt="close-photo" usemap="#m1"></a>
                             <div class="photo__background">
                                 <div class="photo__background-circle">
                                     <div class="line-1"></div>
@@ -370,7 +374,8 @@
                         </li>
 
                         <li class="photo__item">
-                            <img class="photo__report" src="./images/photo2.jpg" alt="photo-report">
+                            <img class="photo__report" id="img2" src="./images/photo2.jpg" alt="photo-report">
+                            <a class="close-photo" href="#" alt="close-photo"></a>
                             <div class="photo__background">
                                 <div class="photo__background-circle">
                                     <div class="line-1"></div>
@@ -380,7 +385,8 @@
                         </li>
 
                         <li class="photo__item">
-                            <img class="photo__report" src="./images/photo3.jpg" alt="photo-report">
+                            <img class="photo__report" id="img3" src="./images/photo3.jpg" alt="photo-report">
+                            <a class="close-photo" href="#" alt="close-photo"></a>
                             <div class="photo__background">
                                 <div class="photo__background-circle">
                                     <div class="line-1"></div>
@@ -390,7 +396,8 @@
                         </li>
 
                         <li class="photo__item">
-                            <img class="photo__report" src="./images/photo4.jpg" alt="photo-report">
+                            <img class="photo__report" id="img4" src="./images/photo4.jpg" alt="photo-report">
+                            <a class="close-photo" href="#" alt="close-photo"></a>
                             <div class="photo__background">
                                 <div class="photo__background-circle">
                                     <div class="line-1"></div>
@@ -400,7 +407,8 @@
                         </li>
 
                         <li class="photo__item">
-                            <img class="photo__report" src="./images/photo5.jpg" alt="photo-report">
+                            <img class="photo__report" id="img5" src="./images/photo5.jpg" alt="photo-report">
+                            <a class="close-photo" href="#" alt="close-photo"></a>
                             <div class="photo__background">
                                 <div class="photo__background-circle">
                                     <div class="line-1"></div>
@@ -410,7 +418,8 @@
                         </li>
 
                         <li class="photo__item">
-                            <img class="photo__report" src="./images/photo6.jpg" alt="photo-report">
+                            <img class="photo__report" id="img6" src="./images/photo6.jpg" alt="photo-report">
+                            <a class="close-photo" href="#" alt="close-photo"></a>
                             <div class="photo__background">
                                 <div class="photo__background-circle">
                                     <div class="line-1"></div>
@@ -425,6 +434,123 @@
             </div>
         </div>
     </section><!-- /.photo-report -->
+
+    <section class="section ways">
+        <div class="container">
+            <div class="ways-container">
+
+                <div class="col">
+                    <h2 class="ways__title">3 простых шага для получения качественного образования</h2>
+                </div>
+
+                <div class="ways-block">
+                    <ul class="ways__list">
+
+                        <li class="ways__item item1">
+
+                            <div class="image-wrap">
+                                <img class="ways__item-image" src="./images/phone.png" alt="phone-image">
+                            </div>
+                            <p class="ways__item-text">
+                                Свяжитесь с нами любым доступным для Вас способом
+                            </p>
+
+                        </li>
+
+                        <li class="ways__item item2">
+
+                            <div class="image-wrap">
+                                <img class="ways__item-image" src="./images/dogg.png" alt="dogg-image">
+                            </div>
+                            <p class="ways__item-text">
+                                В нашей студии мы заключаем с Вами договор и составляем расписание
+                            </p>
+
+                        </li>
+
+                        <li class="ways__item item3">
+
+                            <div class="image-wrap">
+                                <img class="ways__item-image" src="./images/education.png" alt="education-image">
+                            </div>
+                            <p class="ways__item-text">
+                                Начинаем оказывать образовательные услуги согласно расписанию
+                            </p>
+
+                        </li>
+
+                    </ul>
+                </div>
+
+                <form class="ways__form" action="#" method="post">
+                    <h2 class="form-section__title">
+                        Узнай о наличии свободных мест в группах
+                    </h2>
+                    <div class="input-group">
+                        <input class="input input-name" type="text" placeholder="Ваше имя">
+                        <input class="input input-phone" type="text" placeholder="Телефон">
+                        <input class="input input-button" type="button" value="Узнать">
+                    </div>
+                    <input name="check" type="checkbox" id="input-checkbox2">
+                    <label for="input-checkbox2">Я СОГЛАСЕН на обработку моих персональных данных</label>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+
+            <ul class="contacts-list">
+
+                <li class="contacts-list__item">
+                    <h3 class="contacts-list__title">
+                        Мы находимся
+                    </h3>
+                    <div class="contacts-list__wrap">
+                        <img class="fa fa-graduation-cap" src="./images/graduation-cap-icon.svg"/>
+                        <p class="contacts-list__text">
+                            <a class="contacts-list__link" blank="true" href="https://goo.gl/maps/2vgYiucC1jL3sFX59">Ул. Ленина, д.17, <br> 2 этаж, 5 офис</a>
+                        </p>
+                    </div>
+                </li>
+
+                <li class="contacts-list__item">
+                    <h3 class="contacts-list__title">
+                        Позвоните нам
+                    </h3>
+                    <div class="contacts-list__wrap">
+                        <img class="fa fa-graduation-cap" src="./images/icon-phone.svg"/>
+                        <p class="contacts-list__text">
+                            <a class="contacts-list__link" href="tel:+7(910) 200-20-69">+7(910) 200-20-69</a>
+                        </p>
+                    </div>
+                </li>
+
+                <li class="contacts-list__item">
+                    <h3 class="contacts-list__title">
+                        Напишите нам
+                    </h3>
+                    <div class="contacts-list__wrap">
+                        <img class="fa fa-comment-to" src="./images/comment-to-icon.svg"/>
+                        <p class="contacts-list__text">
+                            <a class="contacts-list__link" href="infp@fantasy3d.ru">infp@fantasy3d.ru</a>
+                            <a class="contacts-list__link" href="info@fantasy3d.pro">info@fantasy3d.pro</a>
+                        </p>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+    </footer>
+
+    <div class="original-link">
+        <div class="container">
+            <a href="https://fantasy3d.ru/#">Оригинал сайта "Студия 3д моделирования и компьютерной графики"</a>
+        </div>
+    </div>
 
 </body>
 </html>
